@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1010.0" styleClass="AnchorPane" stylesheets="@../assets/cssStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controller.ReportDashboardFormController">
+   <children>
+      <VBox alignment="CENTER" layoutX="45.0" layoutY="121.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="201.0" prefWidth="443.0" style="-fx-background-color: white; -fx-background-radius: 20;" stylesheets="@../assets/cssStyle.css">
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="434.0" />
+            <JFXButton buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnViewAccountsOnAction" prefHeight="60.0" prefWidth="400.0" stylesheets="@../assets/cssStyle.css" text="VIEW ACCOUNTS">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="444.0" />
+            <JFXButton buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnDailyTransactionsOnAction" prefHeight="60.0" prefWidth="400.0" stylesheets="@../assets/cssStyle.css" text="VIEW DAILY TRANSACTIONS">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="408.0" />
+         </children>
+      </VBox>
+      <Label alignment="BASELINE_CENTER" contentDisplay="TOP" layoutX="45.0" layoutY="24.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="425.0" styleClass="labelHead" text="REPORT DASHBOARD">
+         <font>
+            <Font name="System Bold" size="53.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="516.0" layoutY="210.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="444.0" style="-fx-background-color: white; -fx-background-radius: 20;" stylesheets="@../assets/cssStyle.css">
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="400.0" />
+            <JFXButton buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnPendingLoansOnAction" prefHeight="60.0" prefWidth="400.0" stylesheets="@../assets/cssStyle.css" text="VIEW PENDING LOANS">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="400.0" />
+            <JFXButton buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnApprovedLoansOnAction" prefHeight="60.0" prefWidth="400.0" stylesheets="@../assets/cssStyle.css" text="VIEW APPROVED LOANS">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="400.0" />
+            <JFXButton buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnSettledLoansOnAction" prefHeight="60.0" prefWidth="400.0" stylesheets="@../assets/cssStyle.css" text="VIEW SETTLED LOANS">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="400.0" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="45.0" layoutY="434.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="294.0" prefWidth="443.0" style="-fx-background-color: white; -fx-background-radius: 20;" stylesheets="@../assets/cssStyle.css">
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="400.0" />
+            <JFXButton buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnDepositsOnAction" prefHeight="60.0" prefWidth="400.0" stylesheets="@../assets/cssStyle.css" text="VIEW DEPOSITS">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="400.0" />
+            <JFXButton buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnWithdrawalsOnAction" prefHeight="60.0" prefWidth="400.0" stylesheets="@../assets/cssStyle.css" text="VIEW WITHDRAWALS">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="400.0" />
+            <JFXButton buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnLoanInstallmentsOnAction" prefHeight="60.0" prefWidth="400.0" stylesheets="@../assets/cssStyle.css" text="VIEW LOAN INSTALLMENTS">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="400.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

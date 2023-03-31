@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXScrollPane?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<JFXTabPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1200.0" side="BOTTOM" styleClass="AnchorPane" stylesheets="@../assets/cssStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controller.LoanApprovalProgressController">
+   <tabs>
+      <Tab fx:id="tabCreateAccount" text="Loan Approvement Progress">
+         <content>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1010.0">
+               <children>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="800.0" prefWidth="1010.0" styleClass="AnchorPane" stylesheets="@../assets/cssStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="25.0" layoutY="38.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="479.0" styleClass="labelHead" text="LOAN APPROVAL PROGRESS" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                           <font>
+                              <Font name="System Bold" size="38.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="431.0" layoutY="265.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="71.0" prefWidth="458.0" styleClass="vbox" AnchorPane.rightAnchor="100.0">
+                           <children>
+                              <AnchorPane layoutY="141.0" prefHeight="36.0" prefWidth="458.0" />
+                              <JFXButton layoutX="365.0" layoutY="5.0" onAction="#btnFixed1OnAction" prefHeight="58.0" prefWidth="87.0" text="FIX" />
+                              <JFXComboBox fx:id="cmbBlanceFixing" layoutX="14.0" layoutY="9.0" prefHeight="52.0" prefWidth="340.0" promptText="Choose Fixing Type" styleClass="text-field" />
+                           </children>
+                        </Pane>
+                        <AnchorPane fx:id="paneSearchUpdate" layoutX="26.0" layoutY="104.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="141.0" prefWidth="278.0" styleClass="vbox" AnchorPane.bottomAnchor="556.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="707.0" AnchorPane.topAnchor="103.0">
+                           <children>
+                              <JFXTextField fx:id="txtSearch" focusColor="WHITE" layoutX="16.0" layoutY="14.0" onKeyReleased="#txtSearchOnKeyReleased" prefHeight="40.0" prefWidth="255.0" />
+                              <JFXButton fx:id="btnFind" layoutX="59.0" layoutY="70.0" onAction="#btnFindOnAction" prefHeight="44.0" prefWidth="158.0" text="FIND" />
+                              <Label fx:id="lblNotifySearchUpdate" layoutX="36.0" layoutY="51.0" prefHeight="24.0" prefWidth="333.0" styleClass="labelNotify" text="Label" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="49.0" />
+                           </children>
+                        </AnchorPane>
+                        <VBox layoutX="21.0" layoutY="265.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="312.0" styleClass="vbox">
+                           <children>
+                              <Label alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="300.0" text="PendingLoanID" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblPendingLoanID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="text-field" textFill="WHITE" />
+                              <Label alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="300.0" text="Amount" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblAmount" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="text-field" textFill="WHITE" />
+                              <Label alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="300.0" text="LoanTypeID" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblLoanTypeID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="text-field" textFill="WHITE" />
+                              <Label alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="300.0" text="AccountID" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblAccountID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="text-field" textFill="WHITE" />
+                              <Label alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="300.0" text="Installments" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblInstallments" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="text-field" textFill="WHITE" />
+                              <Label alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="300.0" text="InstallmentAmount" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblInstallmentAmount" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="text-field" textFill="WHITE" />
+                              <Label alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="300.0" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <JFXScrollPane layoutX="463.0" layoutY="94.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="157.0" prefWidth="687.0" AnchorPane.rightAnchor="10.0">
+                           <children>
+                              <TableView fx:id="tblBalancesDeposits" prefHeight="266.0" prefWidth="546.0">
+                                <columns>
+                                  <TableColumn fx:id="colDepositTypes" prefWidth="238.0" text="DepositType(Related loan)" />
+                                  <TableColumn fx:id="colBalance" prefWidth="163.0" text="Balance" />
+                                    <TableColumn fx:id="colRecomendedBalance" prefWidth="251.0" text="Recomended Balance" />
+                                </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </children>
+                        </JFXScrollPane>
+                        <Pane layoutX="423.0" layoutY="349.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="137.0" prefWidth="474.0" styleClass="vbox" AnchorPane.rightAnchor="100.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="212.0" style="-fx-border-color: white;" styleClass="labelNormal" text="Minimum Attendance (3 months)" textFill="#8887ab" wrapText="true">
+                                 <font>
+                                    <Font name="Eras Bold ITC" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="15.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="209.0" style="-fx-border-color: white;" styleClass="labelNormal" text="\% of Attendance (8/12)" textFill="#8887ab">
+                                 <font>
+                                    <Font name="Eras Bold ITC" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" layoutX="259.0" layoutY="16.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="199.0" style="-fx-border-color: white;" styleClass="labelNormal" text="&lt;State&gt;" textFill="#8887ab">
+                                 <font>
+                                    <Font name="Eras Bold ITC" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" layoutX="261.0" layoutY="73.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="199.0" style="-fx-border-color: white;" styleClass="labelNormal" text="&lt;State&gt;" textFill="#8887ab">
+                                 <font>
+                                    <Font name="Eras Bold ITC" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <JFXButton fx:id="btnUpdate1" layoutX="449.0" layoutY="714.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnUpdateOnAction" prefHeight="64.0" prefWidth="423.0" text="Get Result" AnchorPane.rightAnchor="125.0" />
+                        <Pane layoutX="431.0" layoutY="635.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="71.0" prefWidth="458.0" styleClass="vbox" AnchorPane.rightAnchor="100.0">
+                           <children>
+                              <JFXButton layoutX="365.0" layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnFixed2OnAction" prefHeight="58.0" prefWidth="87.0" text="FIX" />
+                              <JFXComboBox fx:id="cmbLoanFixing" layoutX="14.0" layoutY="9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="52.0" prefWidth="340.0" promptText="Choose Fixing Type" styleClass="text-field" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="421.0" layoutY="492.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="137.0" prefWidth="478.0" styleClass="vbox" AnchorPane.rightAnchor="100.0">
+                           <children>
+                              <Label layoutX="16.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: white;" styleClass="labelNormal" text="Arrears Loans" textFill="#8887ab">
+                                 <font>
+                                    <Font name="Eras Bold ITC" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="16.0" layoutY="73.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: white;" styleClass="labelNormal" text="Loans (Max 2)" textFill="#8887ab">
+                                 <font>
+                                    <Font name="Eras Bold ITC" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" layoutX="260.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="199.0" style="-fx-border-color: white;" styleClass="labelNormal" text="&lt;State&gt;" textFill="#8887ab">
+                                 <font>
+                                    <Font name="Eras Bold ITC" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" layoutX="260.0" layoutY="74.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="199.0" style="-fx-border-color: white;" styleClass="labelNormal" text="&lt;State&gt;" textFill="#8887ab">
+                                 <font>
+                                    <Font name="Eras Bold ITC" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab fx:id="tabCloseAccount" disable="true" text="Result">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="1010.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="27.0" layoutY="38.0" prefHeight="47.0" prefWidth="167.0" styleClass="labelHead" text="RESULT" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font name="System Bold" size="38.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane fx:id="paneFailed" layoutX="27.0" layoutY="122.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="523.0" styleClass="text-field" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="125.0">
+                     <children>
+                        <Label layoutX="43.0" layoutY="103.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" text="Loan ID" />
+                        <Label layoutX="43.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" text="Account ID" />
+                        <Label layoutX="43.0" layoutY="245.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" text="Amount" />
+                        <Label layoutX="43.0" layoutY="325.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" text="Approved Date and Time" wrapText="true" />
+                        <Label layoutX="43.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" text="Balance check" />
+                        <Label fx:id="lblLoanIDrst" layoutX="272.0" layoutY="103.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: brown;" />
+                        <Label fx:id="lblAccountIDrst" layoutX="272.0" layoutY="172.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: brown;" />
+                        <Label fx:id="lblAmountrst" layoutX="272.0" layoutY="245.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: brown;" />
+                        <Label fx:id="lblDateTimerst" layoutX="272.0" layoutY="325.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: brown;" />
+                        <Label fx:id="lblChackBalancerst" layoutX="272.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: brown;" />
+                        <Label layoutX="28.0" layoutY="29.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Technical Approve Failed">
+                           <font>
+                              <Font name="Eras Bold ITC" size="33.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="43.0" layoutY="479.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" text="Attendance check" />
+                        <Label fx:id="lblCheckAttendancerst" layoutX="271.0" layoutY="479.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: brown;" />
+                        <Label layoutX="43.0" layoutY="555.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" text="Loan check" />
+                        <Label fx:id="lblCheckLoanrst" layoutX="271.0" layoutY="555.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: brown;" />
+                        <Label layoutX="44.0" layoutY="626.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" text="Arrears Loan check" />
+                        <Label fx:id="lblCheckArrearsLoansrst" layoutX="272.0" layoutY="626.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" style="-fx-border-color: brown;" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="paneApprove" layoutX="622.0" layoutY="122.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="523.0" styleClass="text-field" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="125.0">
+                     <children>
+                        <Label layoutX="39.0" layoutY="22.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="468.0" text="Technical Approve Success">
+                           <font>
+                              <Font name="Eras Bold ITC" size="33.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="48.0" layoutY="91.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="200.0" text="Loan ID" />
+                        <Label layoutX="48.0" layoutY="160.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="200.0" text="Account ID" />
+                        <Label layoutX="48.0" layoutY="233.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="200.0" text="Amount" />
+                        <Label layoutX="48.0" layoutY="310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="200.0" text="Rejected Date and Time" wrapText="true" />
+                        <Label layoutX="48.0" layoutY="394.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="200.0" text="Balance check" />
+                        <Label layoutX="48.0" layoutY="473.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="200.0" text="Attendance check" />
+                        <Label layoutX="48.0" layoutY="549.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="200.0" text="Loan check" />
+                        <Label layoutX="48.0" layoutY="626.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="200.0" text="Arrears Loan check" />
+                        <Label fx:id="lblLoanIDrst1" layoutX="290.0" layoutY="91.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="200.0" style="-fx-border-color: brown;" />
+                        <Label fx:id="lblAccountIDrst1" layoutX="290.0" layoutY="160.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="200.0" style="-fx-border-color: brown;" />
+                        <Label fx:id="lblAmountrst1" layoutX="290.0" layoutY="233.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="200.0" style="-fx-border-color: brown;" />
+                        <Label fx:id="lblDateTimerst1" layoutX="290.0" layoutY="313.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="200.0" style="-fx-border-color: brown;" />
+                        <Label fx:id="lblChackBalancerst1" layoutX="290.0" layoutY="388.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="200.0" style="-fx-border-color: brown;" />
+                        <Label fx:id="lblCheckAttendancerst1" layoutX="289.0" layoutY="467.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="200.0" style="-fx-border-color: brown;" />
+                        <Label fx:id="lblCheckLoanrst1" layoutX="289.0" layoutY="543.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="200.0" style="-fx-border-color: brown;" />
+                        <Label fx:id="lblCheckArrearsLoansrst1" layoutX="290.0" layoutY="614.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="200.0" style="-fx-border-color: brown;" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</JFXTabPane>

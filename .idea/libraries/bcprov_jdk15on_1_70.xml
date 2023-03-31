@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="bcprov-jdk15on-1.70">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/lib/Jasperjar/bcprov-jdk15on-1.70.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/lib/Jasperjar/bcutil-jdk15on-1.70.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/lib/Jasperjar/commons-beanutils-1.9.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/lib/Jasperjar/commons-collections-3.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/lib/Jasperjar/commons-collections4-4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/lib/Jasperjar/commons-digester-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/lib/Jasperjar/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/lib/Jasperjar/ecj-3.21.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/lib/Jasperjar/itext-2.1.7.js10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/lib/Jasperjar/jackson-annotations-2.13.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/lib/Jasperjar/jackson-core-2.13.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/lib/Jasperjar/jackson-databind-2.13.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/lib/Jasperjar/jackson-dataformat-xml-2.13.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/lib/Jasperjar/jasperreports-6.20.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/lib/Jasperjar/jcommon-1.0.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/lib/Jasperjar/jfreechart-1.0.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/lib/Jasperjar/stax2-api-4.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lk/ijse/gdse/lib/Jasperjar/woodstox-core-6.2.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

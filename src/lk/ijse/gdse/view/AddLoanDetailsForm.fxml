@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXScrollPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="800.0" prefWidth="1010.0" styleClass="AnchorPane" stylesheets="@../assets/cssStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controller.AddLoanDetailsController">
+   <children>
+      <HBox layoutX="21.0" layoutY="90.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="494.0" styleClass="vbox" AnchorPane.leftAnchor="21.0">
+         <children>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="218.0" prefWidth="177.0">
+               <children>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="180.0" />
+                  <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="180.0" text="Loan Type ID" textFill="WHITE">
+                     <font>
+                        <Font name="Eras Bold ITC" size="20.0" />
+                     </font>
+                  </Label>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="180.0" />
+                  <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="180.0" text="Description" textFill="WHITE">
+                     <font>
+                        <Font name="Eras Bold ITC" size="20.0" />
+                     </font>
+                  </Label>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="180.0" />
+                  <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="180.0" text="Interest" textFill="WHITE">
+                     <font>
+                        <Font name="Eras Bold ITC" size="20.0" />
+                     </font>
+                  </Label>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="180.0" />
+                  <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="180.0" text="Amounts" textFill="WHITE">
+                     <font>
+                        <Font name="Eras Bold ITC" size="20.0" />
+                     </font>
+                  </Label>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="180.0" />
+               </children>
+            </VBox>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="213.0" prefWidth="310.0">
+               <children>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="9.0" prefWidth="244.0" />
+                  <JFXTextField fx:id="txtLoanTypeID" disable="true" focusColor="WHITE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="300.0" />
+                  <Label fx:id="lblNotifyNic" styleClass="labelNotify" />
+                  <JFXTextField fx:id="txtDescription" focusColor="WHITE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#txtDescriptionOnKeyReleased" prefWidth="300.0" />
+                  <Label fx:id="lblDescription" styleClass="labelNotify" />
+                  <JFXTextField fx:id="txtInterest" focusColor="WHITE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#txtInterestOnKeyReleased" prefWidth="300.0" />
+                  <Label fx:id="lblInterest" styleClass="labelNotify" />
+                  <JFXTextField fx:id="txtAmounts" focusColor="WHITE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#txtAmountsOnKeyReleased" prefWidth="300.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="25.0" layoutY="38.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="393.0" styleClass="labelHead" text="LOAN TYPES SETTINGS" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="paneSearchUpdate" layoutX="543.0" layoutY="90.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="117.0" prefWidth="436.0" styleClass="vbox" AnchorPane.rightAnchor="31.0">
+         <children>
+            <JFXTextField fx:id="txtSearch" focusColor="WHITE" labelFloat="true" layoutX="14.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#txtSearchOnKeyReleased" prefHeight="36.0" prefWidth="412.0" promptText="Search" />
+            <JFXButton fx:id="btnUpdate" layoutX="229.0" layoutY="60.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnUpdateOnAction" prefHeight="40.0" prefWidth="170.0" text="Update" />
+         </children>
+      </AnchorPane>
+      <JFXScrollPane layoutX="26.0" layoutY="339.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="960.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <TableView fx:id="tblLoanTypes" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#tblLoanTypesOnMouseCklicked" prefHeight="350.0" prefWidth="960.0">
+               <columns>
+                  <TableColumn fx:id="colLoanTypeID" prefWidth="103.0" text="Loan Type ID" />
+                  <TableColumn fx:id="colDescription" prefWidth="163.0" text="Description" />
+                  <TableColumn fx:id="colInterest" prefWidth="108.0" text="Interest" />
+                  <TableColumn fx:id="colAmounts" prefWidth="442.0" text="Amounts" />
+                  <TableColumn fx:id="colRemove" prefWidth="138.0" text="Remove" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </JFXScrollPane>
+      <JFXButton layoutX="773.0" layoutY="257.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnAddOnAction" prefHeight="58.0" prefWidth="196.0" stylesheets="@../assets/cssStyle.css" text="ADD" AnchorPane.rightAnchor="41.0" />
+      <JFXButton layoutX="553.0" layoutY="257.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnClearOnAction" prefHeight="58.0" prefWidth="192.0" text="CLEAR" AnchorPane.rightAnchor="265.0" />
+      <JFXButton layoutX="42.0" layoutY="710.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnViewLoanTypesOnAction" prefHeight="58.0" prefWidth="210.0" stylesheets="@../assets/cssStyle.css" text="VIEW LOAN TYPES" AnchorPane.leftAnchor="42.0" />
+      <JFXButton fx:id="btnOk" layoutX="663.0" layoutY="707.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnOkOnAction" prefHeight="58.0" prefWidth="306.0" stylesheets="@../assets/cssStyle.css" text="OK" AnchorPane.rightAnchor="41.0" />
+   </children>
+</AnchorPane>

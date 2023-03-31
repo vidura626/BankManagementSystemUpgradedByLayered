@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0" prefWidth="414.0" styleClass="AnchorPane" stylesheets="@../assets/cssStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controller.ReActiveFormController">
+   <children>
+      <JFXTextField fx:id="txtNic" focusColor="WHITE" labelFloat="true" layoutX="50.0" layoutY="40.0" prefHeight="45.0" prefWidth="315.0" promptText="NIC" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+      <JFXButton layoutX="129.0" layoutY="114.0" onAction="#btnReActioveOnAction" prefHeight="62.0" prefWidth="157.0" text="Re-Active" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0" />
+   </children>
+</AnchorPane>
